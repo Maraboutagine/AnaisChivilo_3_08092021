@@ -1,0 +1,78 @@
+/*GENERAL*/
+html,body{
+    font-family: Roboto;
+    margin: auto;
+}
+header{
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+    padding: 30px;
+    position: relative;
+    display: flex;
+    background-color: #FFFFFF;
+}
+.flexCentre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+.flexBetween{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+.flexColumnCentre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flexColumnAround{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flexColumnBetween{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.decorationNone{
+    text-decoration: none;
+}
+.bordureNone{
+    border: none;
+}
+.colorViolet{
+    color:#9356dc;  
+}
+.colorRose{
+    color:#ff79da;
+}
+.colorTurquoise{
+    background: color #99e2d0; ;
+}
+.backgris{
+    background-color:#eaeaea;  
+}
+.texteGras{
+    font-weight: bold;  
+} 
+/*HEADER*/
+.logo{
+    margin-left: 30px;
+    width: 250px;
+}
+/*NAV*/
+.localisation{
+ background-color: #eaeaea ;
+ padding: 15px; 
+}
+.localisation__texte {
+    margin-left: 850px;
+    font-family : 'Roboto', sans-serif
+}
