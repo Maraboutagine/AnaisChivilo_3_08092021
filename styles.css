@@ -1,7 +1,10 @@
 /*GENERAL*/
-html,body{
-    font-family: Roboto;
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     margin: auto;
+    color: #000000;
+    background-color: #F6F6F6;
 }
 header{
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
@@ -54,7 +57,7 @@ header{
     color:#ff79da;
 }
 .colorTurquoise{
-    background: color #99e2d0; ;
+    background: color #99e2d0; 
 }
 .backgris{
     background-color:#eaeaea;  
@@ -62,6 +65,12 @@ header{
 .texteGras{
     font-weight: bold;  
 } 
+.policeRoboto{
+    font-family : 'Roboto', sans-serif
+}
+.policeShrikhand{
+    font-family : 'Shrikhand', cursif;
+}
 /*HEADER*/
 .logo{
     margin-left: 30px;
@@ -74,5 +83,99 @@ header{
 }
 .localisation__texte {
     margin-left: 850px;
+    font-family : 'Roboto', sans-serif;
+    font-weight: 400;
+}
+/*MAIN*/
+.policeRoboto100{
+    font-weight: 100;
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    text-align: center;
     font-family : 'Roboto', sans-serif
+}
+.reservation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #F6F6F6;
+}
+.reservation__soustitre{
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: center;
+}
+button{
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+}
+.bouton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    color: #000000;
+    color: #FFFFFF;
+    border-radius: 30px;
+    background: linear-gradient(
+175deg, #FF79DA 10%, #9356DC 95%);
+    transition: box-shadow 150ms linear, transform 150ms linear;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 30%);
+}
+.bouton:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.fonctionnement{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #FFFFFF;
+    width: auto;
+}
+.bloc{
+    display: flex;
+}
+.choix{
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    width: 336px;
+    height: 74px;
+    border-radius: 20px;
+    background: #F6F6F6;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+}
+.circle-num{
+    position: absolute;
+}
+.circle{
+    position: absolute;
+    z-index: 4;
+    width: 28.8px;
+    height: 28.8px;
+    border-radius: 50%;
+    background-color: #9356DC;
+}
+.number{
+    font-size: 0.85rem;
+    font-weight: 400;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28.8px;
+    height: 28.8px;
+    color: #FFFFFF;
 }
