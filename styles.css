@@ -13,6 +13,11 @@ header{
     display: flex;
     background-color: #FFFFFF;
 }
+main{
+    width: 98%;
+    max-width: 1440px;
+    margin: auto;
+}
 .flexCentre{
     display: flex;
     justify-content: center;
@@ -177,11 +182,11 @@ h2{
 }
 .cercle-nombre{
     position: absolute;
-    top: 540px;
+    top: 535px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: calc(100% - 30px);
+    width: 30%;
 }
 .cercle{
     position: absolute;
@@ -202,4 +207,105 @@ h2{
     width: 28.8px;
     height: 28.8px;
     color: #FFFFFF;
+}
+/*SECTION*/
+.Restaurants{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.blocRestaurants{
+    width: 75%;
+    height: 75%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cubeRestaurants{
+    width: 23%;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+    margin: auto;
+    position: relative;
+}
+.imgRestaurants{
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+.titreRestaurants{
+    align-items: center;
+    padding-left: 5%;
+    width: 95%;
+}
+.nouveau{
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: .5rem;
+    border-radius: .125rem;
+    top: 1rem;
+    right: .75rem;
+    position: absolute;
+}
+.favoris{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 180%;
+}
+.coeur1{
+    font-size: 24px;
+    position: absolute;
+    z-index: 1;
+    color: #000000;
+}
+.coeur2{
+    font-size: 24px;
+    position: absolute;
+    z-index: 2; 
+    -webkit-text-fill-color: transparent;  
+}
+.coeur2:hover{
+    transform: scale(1);
+    background: -webkit-linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+    -webkit-background-clip: text;
+}
+/*FOOTER*/
+.footer{
+    height: 150px;
+    margin-top: 50px;
+    background-color: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lienFooter{
+    color: white; 
+}
+.lienFooter:hover{
+    color: #ff79da;
+
+}
+.divLienFooter{
+    height: 1px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.logo3{
+    color: white;
+}
+.logo4{
+    filter: invert(100%);
+    margin-top: -35px;
+
+
 }
