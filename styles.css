@@ -56,11 +56,17 @@ header{
 .colorRose{
     color:#ff79da;
 }
+.colorVioletClair{
+    color:  #f2eafb;
+}
 .colorTurquoise{
     background: color #99e2d0; 
 }
 .backgris{
     background-color:#eaeaea;  
+}
+.backblanc{
+    background-color: white;
 }
 .texteGras{
     font-weight: bold;  
@@ -82,7 +88,7 @@ header{
  padding: 15px; 
 }
 .localisation__texte {
-    margin-left: 850px;
+    margin-left: 46%;
     font-family : 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -135,31 +141,49 @@ button{
     cursor: pointer;
     transform: scale(1.1);
 }
-.fonctionnement{
+.Fonctionnement{
+    height: 400px;
+    margin-right: 200px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Fonctionnement__titre{
+    align-items: center;
+}
+.bloc{
+    margin-bottom: 10px;
+}
+.cubeFonctionnement{
+    width: 25%;
+    height: 170px;
+    background-color: #F6F6F6;
+    padding: 3%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.cubeFonctionnement:hover{  
+    background-color:#f2eafb ;
+}
+.logo1{
+    color: #7e7e7e;
+}
+.logo2{
+    color: #9356dc;
+}
+h2{
+    text-align: center;
+}
+.cercle-nombre{
+    position: absolute;
+    top: 540px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
-    background-color: #FFFFFF;
-    width: auto;
+    width: calc(100% - 30px);
 }
-.bloc{
-    display: flex;
-}
-.choix{
-    font-weight: 500;
-    position: relative;
-    display: flex;
-    width: 336px;
-    height: 74px;
-    border-radius: 20px;
-    background: #F6F6F6;
-    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
-}
-.circle-num{
-    position: absolute;
-}
-.circle{
+.cercle{
     position: absolute;
     z-index: 4;
     width: 28.8px;
@@ -167,7 +191,7 @@ button{
     border-radius: 50%;
     background-color: #9356DC;
 }
-.number{
+.nombre{
     font-size: 0.85rem;
     font-weight: 400;
     position: absolute;
