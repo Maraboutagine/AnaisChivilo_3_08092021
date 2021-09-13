@@ -103,8 +103,7 @@ main{
     padding-top: 1rem;
     position: relative;
     top: -65px;
-    margin-bottom: -30px;
-    height: 600px;
+    margin-bottom: -115px;
     width: 50%;
 }
 .blocmenus{
@@ -138,6 +137,7 @@ main{
     margin: auto;
     position: relative;
     border-radius: 20px;
+    margin: 1rem 0 12px 0;
 }
 .cubeMenuTitre{
     align-items: center;
@@ -146,6 +146,43 @@ main{
 }
 h4{
     margin-bottom: -10px;
+}
+button{
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+}
+.bouton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    color: #000000;
+    color: #FFFFFF;
+    border-radius: 30px;
+    background: linear-gradient(
+175deg, #FF79DA 10%, #9356DC 95%);
+    transition: box-shadow 150ms linear, transform 150ms linear;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 30%);
+}
+.bouton:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.reservation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #F6F6F6;
+}
+.prix{
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 95%;
 }
 /*HEADER2*/
 .menu__header{
@@ -185,4 +222,37 @@ h4{
     transform: scale(1);
     background: -webkit-linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
     -webkit-background-clip: text;
+}
+/*FOOTER*/
+.footer{
+    height: 150px;
+    margin-top: 50px;
+    background-color: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lienFooter{
+    color: white; 
+}
+.lienFooter:hover{
+    color: #ff79da;
+
+}
+.divLienFooter{
+    height: 1px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.logo3{
+    color: white;
+}
+.logo4{
+    filter: invert(100%);
+    margin-top: -35px;
+
+}
+.colorBlack{
+    color: black
 }
