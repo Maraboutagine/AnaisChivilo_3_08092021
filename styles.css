@@ -307,5 +307,7 @@ h2{
     filter: invert(100%);
     margin-top: -35px;
 
-
+}
+.colorBlack{
+    color: black
 }
