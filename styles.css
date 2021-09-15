@@ -275,6 +275,7 @@ h2{
 }
 .coeur2:hover{
     transform: scale(1);
+    animation: coeur 0.3s .3s ease-out both,transform .3s;
     background: -webkit-linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
     -webkit-background-clip: text;
 }
@@ -310,4 +311,12 @@ h2{
 }
 .colorBlack{
     color: black
+}
+@keyframes coeur{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 1;
+    }
 }

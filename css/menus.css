@@ -138,6 +138,10 @@ main{
     position: relative;
     border-radius: 20px;
     margin: 1rem 0 12px 0;
+    overflow: hidden;
+    cursor: pointer;
+    animation: fadein 1.2s .3s ease-out both,transform .3s;
+    -webkit-transition: all 1.5s;
 }
 .cubeMenuTitre{
     align-items: center;
@@ -182,6 +186,8 @@ button{
 .prix{
     font-size: 14px;
     font-weight: bold;
+    animation: 1.2s .3s ease-in-out both, transform .3s;
+    transition: transform 500ms
 }
 /*HEADER2*/
 .menu__header{
@@ -219,6 +225,7 @@ button{
 }
 .coeur2:hover{
     transform: scale(1);
+    animation: coeur 0.3s .3s ease-out both,transform .3s;
     background: -webkit-linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
     -webkit-background-clip: text;
 }
@@ -270,3 +277,53 @@ button{
     transition: width 400ms, text-overflow 400ms, margin-right 400ms, overflow 400ms;
     margin-bottom: 2%;
 }
+.blocAjout{
+    position: absolute;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #99e2d0;
+    top: 0;
+    left: 100%;
+    width: 20%;
+    height: 100%;
+    border-radius: 0 1.5rem 1.5rem 0;
+    color: #fff;
+    font-size: 20px;
+    transform-origin: right;
+    justify-content: center;
+    transition: transform 500ms;
+    will-change: transform;
+}
+.blocAjout__icon{
+    transform: rotate(180deg);
+    transition-duration: .5s;
+}
+.cubeMenu:hover .blocAjout__icon{
+    transform: rotate(0deg);
+}
+.cubeMenu:hover .blocAjout{
+    transform: translateX(-150px);
+}
+.cubeMenu:hover .prix{
+    transform: translateX(-150px);
+}
+@keyframes fadein{
+    0% {
+        transform: translateY(-50%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes coeur{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+ 
