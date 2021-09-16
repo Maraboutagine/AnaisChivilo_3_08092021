@@ -168,13 +168,13 @@ button{
     border-radius: 20px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
-.cubeFonctionnement:hover{  
-    background-color:#f2eafb ;
+.cubeFonctionnement:hover{
+    background-color: #f2eafb;
 }
 .logo1{
     color: #7e7e7e;
 }
-.logo2{
+.cubeFonctionnement:hover .logo1{
     color: #9356dc;
 }
 h2{

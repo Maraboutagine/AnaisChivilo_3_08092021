@@ -91,6 +91,12 @@ main{
     width: 100%;
     object-fit: cover;
 }
+.return{
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    color: black;
+}
 /*MAIN*/
 .bloc{
     width: 100%;
