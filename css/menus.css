@@ -179,8 +179,9 @@ button{
     box-shadow: 0 10px 20px 0 rgb(0 0 0 / 30%);
 }
 .bouton:hover{
-    cursor: pointer;
-    transform: scale(1.1);
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 40%);
+    background: linear-gradient(
+        175deg, #f392d8 10%, #ac74f1 95%);
 }
 .reservation{
     display: flex;
