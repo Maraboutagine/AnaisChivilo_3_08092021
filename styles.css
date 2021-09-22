@@ -2,9 +2,13 @@
 body{
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    margin: auto;
     color: #000000;
     background-color: #F6F6F6;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 header{
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
@@ -72,6 +76,7 @@ main{
 }
 .backblanc{
     background-color: white;
+    width: 100%;
 }
 .texteGras{
     font-weight: bold;  
@@ -130,9 +135,10 @@ main{
 .localisation{
  background-color: #eaeaea ;
  padding: 15px; 
+ display: flex;
+ justify-content: center;
 }
 .localisation__texte {
-    margin-left: 46%;
     font-family : 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -155,10 +161,11 @@ h1{
     background-color: #F6F6F6;
 }
 .reservation__soustitre{
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 300;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     text-align: center;
+    width: 100%;
 }
 button{
     font-family: "Roboto", sans-serif;
@@ -188,45 +195,57 @@ button{
 }
 .Fonctionnement{
     height: 400px;
-    margin-right: 200px;
-    margin-left: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-.Fonctionnement__titre{
     align-items: center;
 }
+.Fonctionnement__titre{
+    text-align: left;
+    margin-left: -55%;
+    font-size: 1.3rem;
+}
 .bloc{
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    flex-direction: column;
 }
 .cubeFonctionnement{
-    width: 25%;
-    height: 170px;
+    width: 150%;
+    height: 52px;
     background-color: #F6F6F6;
     padding: 3%;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
+    margin-top:20px ; 
+    position: relative;
+    align-items: center;
 }
 .cubeFonctionnement:hover{
     background-color: #f2eafb;
 }
 .logo1{
     color: #7e7e7e;
+    width: 90%;
+    height: 0%;
+    position: relative;
+    left: 20px;
+    bottom: -19px;
 }
 .cubeFonctionnement:hover .logo1{
     color: #9356dc;
 }
 h2{
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1.3rem;
 }
 .cercle-nombre{
     position: absolute;
-    top: 535px;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 30%;
+    width: 113%;
+    bottom: 45px;
+    left: -12px;
 }
 .cercle{
     position: absolute;
@@ -248,6 +267,10 @@ h2{
     height: 28.8px;
     color: #FFFFFF;
 }
+h4{
+    font-size: 1rem;
+    margin-left: 20px;
+}
 /*SECTION*/
 .Restaurants{
     margin-top: 50px;
@@ -259,15 +282,16 @@ h2{
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
 }
 .cubeRestaurants{
-    width: 23%;
+    width: 120%;
     height: auto;
     background-color: white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
-    margin: auto;
     position: relative;
+    margin-top: 20px;
 }
 .imgRestaurants{
     background-position: center;
@@ -321,12 +345,14 @@ h2{
 }
 /*FOOTER*/
 .footer{
-    height: 150px;
+    height: 220px;
     margin-top: 50px;
     background-color: #353535;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-left: -64px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .lienFooter{
     color: white; 
@@ -336,9 +362,9 @@ h2{
 
 }
 .divLienFooter{
-    height: 1px;
     margin-left: 80px;
     margin-right: 80px;
+    margin-bottom: 6px;
 }
 
 .logo3{
@@ -381,6 +407,59 @@ h2{
     }
 
 }
-@media screen and (max-width:600px){
+@media screen and (min-width:1050px){
+    .Fonctionnement__titre{
+        margin-left: -3%;
+        font-size: 1.3rem;
+    }
+    .backblanc{
+        margin-left: 13%;
+        width: 75%;
+    }
+    .bloc{
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    .cubeFonctionnement{
+        width: 25%;
+        height: 170px;
+      
+    }
+    .logo1{
+       height: 5px;
+       left: 59px;
+       bottom: 0;
+    }
+    h4{
+        margin-left: 34px;
+        font-size: 1.1rem;
+        margin-right: 14%;
+        margin-bottom: 25%;
+    }
+    .cercle-nombre{
+        position: inherit;
+        width: 5%;
+        height: 25%;
+    }
+    h2{
+        text-align: center;
+    }
+    .blocRestaurants{
+        flex-direction: row;
+    }
+    .cubeRestaurants{
+        width: 23%;
+        margin: auto;
+    }
+    .footer{
+        height: 150px;
+        align-items: center;
+        flex-direction: inherit;
+    }
+    .divLienFooter{
+        height: 1%;
+        margin-left: 5% ;
+        margin-right: 0;
 
+    }
 }
