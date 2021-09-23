@@ -63,7 +63,7 @@ main{
     color:  #f2eafb;
 }
 .colorTurquoise{
-    background: color #99e2d0; 
+    background: #99e2d0; 
 }
 .backgris{
     background-color:#eaeaea;  
@@ -361,7 +361,5 @@ button{
         transform: translateX(-500%);
     }
 }
-@media screen and (min-width:600px) {
-    
-}
+
  

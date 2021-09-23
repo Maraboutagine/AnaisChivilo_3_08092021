@@ -69,7 +69,7 @@ main{
     color:  #f2eafb;
 }
 .colorTurquoise{
-    background: color #99e2d0; 
+    background: #99e2d0; 
 }
 .backgris{
     background-color:#eaeaea;  
@@ -194,20 +194,21 @@ button{
         175deg, #f392d8 10%, #ac74f1 95%);
 }
 .Fonctionnement{
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 .Fonctionnement__titre{
     text-align: left;
-    margin-left: -55%;
+    margin-top: 65px;
     font-size: 1.3rem;
 }
 .bloc{
     margin-bottom: 50px;
     flex-direction: column;
+    margin-left: 25%;
+    width: 50%;
 }
 .cubeFonctionnement{
     width: 150%;
@@ -408,6 +409,9 @@ h4{
 
 }
 @media screen and (min-width:1050px){
+    .Fonctionnement{
+        align-items: center;
+    }
     .Fonctionnement__titre{
         margin-left: -3%;
         font-size: 1.3rem;
@@ -418,23 +422,24 @@ h4{
     }
     .bloc{
         flex-direction: row;
-        margin-bottom: 10px;
+        margin-bottom: 40px;
+        margin-left: 0;
+        width: 70%;
     }
     .cubeFonctionnement{
-        width: 25%;
+        width: 24%;
         height: 170px;
       
     }
     .logo1{
-       height: 5px;
-       left: 59px;
-       bottom: 0;
+       left: 36%;
+       bottom: 20px;
     }
     h4{
-        margin-left: 34px;
         font-size: 1.1rem;
-        margin-right: 14%;
+        margin-right: 15%;
         margin-bottom: 25%;
+        text-align: center;
     }
     .cercle-nombre{
         position: inherit;
