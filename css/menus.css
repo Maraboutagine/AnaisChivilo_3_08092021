@@ -193,8 +193,7 @@ button{
 .prix{
     font-size: 14px;
     font-weight: bold;
-    animation: 1.2s .3s ease-in-out both, transform .3s;
-    transition: transform 500ms;
+    width: 35px
 }
 /*HEADER2*/
 .menu__header{
@@ -278,6 +277,7 @@ button{
     transition: width 400ms, text-overflow 400ms;
     white-space: nowrap;
     text-overflow: ellipsis;
+    width: calc(85%);
 }
 .blocDescription{
     display: flex;
@@ -301,7 +301,7 @@ button{
     font-size: 20px;
     transform-origin: right;
     justify-content: center;
-    transition: transform 500ms;
+    transition: transform 0.7s;
     will-change: transform;
 }
 .blocAjout__icon{
@@ -319,7 +319,9 @@ button{
     transform: translateX(-100%);
 }
 .cubeMenu:hover .prix{
-    transform: translate(-300%, 0);
+   animation: textprix ease-in-out both;
+   animation-duration: 490ms;
+   animation-delay: 0ms;
 }
 @keyframes fadein{
     0% {
@@ -339,6 +341,23 @@ button{
         opacity: 1;
     }
 }
+@keyframes textprix {
+    0%{
+        width: calc(10%);
+    }
+    100%{
+        width: calc(35%);
+    }
+    
+}
+@keyframes textprixresponsive {
+    0%{
+        width: 35px
+    }
+    100%{
+        width: 145px
+    }
+}
 @media screen and (min-width:750px){
     .favoris{
         height: 180%;
@@ -354,11 +373,13 @@ button{
         margin-right: 0;
 
     }
+    .cubeMenu:hover .prix{
+        animation: textprixresponsive ease-in-out both;
+        animation-duration: 480ms;
+        animation-delay: 0ms;
+    }
     #menu{
         width: 50%;
-    }
-    .cubeMenu:hover .prix{
-        transform: translateX(-500%);
     }
     .blocAjout{
         width: 100px;

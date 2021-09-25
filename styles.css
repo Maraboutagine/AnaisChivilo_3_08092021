@@ -468,3 +468,17 @@ h4{
 
     }
 }
+    @media screen and (min-width:750px){
+        .footer{
+            height: 150px;
+            align-items: center;
+            flex-direction: inherit;
+        }
+        .divLienFooter{
+            height: 1%;
+            margin-left: 5% ;
+            margin-right: 0;
+    
+    
+    }
+}
