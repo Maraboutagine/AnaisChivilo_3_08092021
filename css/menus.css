@@ -194,7 +194,7 @@ button{
     font-size: 14px;
     font-weight: bold;
     animation: 1.2s .3s ease-in-out both, transform .3s;
-    transition: transform 500ms
+    transition: transform 500ms;
 }
 /*HEADER2*/
 .menu__header{
@@ -359,6 +359,9 @@ button{
     }
     .cubeMenu:hover .prix{
         transform: translateX(-500%);
+    }
+    .blocAjout{
+        width: 100px;
     }
 }
 
